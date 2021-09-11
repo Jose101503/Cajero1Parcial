@@ -1,0 +1,26 @@
+﻿@model Cajero1Parcial.Models.ViewModels.MontoModel
+
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+<h2>Index</h2>
+
+@using (Html.BeginForm( "procesar", "MontoControl"))
+
+{
+
+    <label>Ingrese el monto a retirar$</label>
+    <br />
+    <input type="text" name="Monto" />
+
+    <br />
+
+    <input type="submit" />
+
+}
