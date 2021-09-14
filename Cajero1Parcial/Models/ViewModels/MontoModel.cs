@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
+﻿using System.ComponentModel.DataAnnotations;
+
 
 namespace Cajero1Parcial.Models.ViewModels
 {
@@ -12,10 +9,6 @@ namespace Cajero1Parcial.Models.ViewModels
         [Required(ErrorMessage = "Este campo es requerido")]
         public int Monto { get; set; }
     }
-    public ActionResult()
-    {
-
-        return ViewModels();
-    }
+    
 }
 

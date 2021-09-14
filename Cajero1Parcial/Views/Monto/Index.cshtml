@@ -9,18 +9,17 @@
 
 
 
-<h2>Index</h2>
-
-@using (Html.BeginForm( "procesar", "MontoControl"))
-
+<h2>CAJERO AUTOMATICO</h2>
+@using (Html.BeginForm("Procesar", "Monto","MontoModel", FormMethod.Post))
 {
 
     <label>Ingrese el monto a retirar$</label>
+    
     <br />
-    <input type="text" name="Monto" />
-
+    @Html.TextBoxFor(m => m.Monto)
     <br />
-
+    @Html.ValidationMessageFor(m => m.Monto, null)
+    <br />
     <input type="submit" />
 
-}
+} 
